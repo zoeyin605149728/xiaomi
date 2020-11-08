@@ -1,0 +1,844 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.header {
+  width: 100%;
+  height: 260px;
+}
+.header .topbar-banner-Wrapper {
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+.header .topbar-banner-Wrapper .link-block {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: auto 120px;
+  text-indent: -9999px;
+  background-image: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a2a9e6db5e3c5374301827435d8595c6.jpg?w=5120&amp;h=240);
+}
+.header .site-topbar {
+  position: relative;
+  z-index: 30;
+  height: 40px;
+  font-size: 12px;
+  color: #b0b0b0;
+  background: #333;
+}
+.header .site-topbar .container {
+  width: 1226px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header .site-topbar .container .topbar-nav {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+.header .site-topbar .container .topbar-nav a {
+  color: #b0b0b0;
+  line-height: 40px;
+  display: inline-block;
+}
+.header .site-topbar .container .topbar-nav .sep {
+  margin: 0 0.3em;
+  color: #424242;
+  font-family: sans-serif;
+}
+.header .site-topbar .container .topbar-cart {
+  position: relative;
+  float: right;
+  width: 120px;
+  height: 40px;
+  margin-left: 15px;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+.header .site-topbar .container .topbar-cart .cart-mini {
+  position: relative;
+  z-index: 32;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #b0b0b0;
+  background: #424242;
+}
+.header .site-topbar .container .topbar-cart .cart-mini .icon-gouwuchekong {
+  margin-right: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  vertical-align: -4px;
+}
+.header .site-topbar .container .topbar-info {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.header .site-topbar .container .topbar-info a {
+  padding: 0 5px;
+}
+.header .nav0 {
+  width: 1226px;
+  margin: 0 auto;
+  padding: 25px 0;
+  height: 50px;
+}
+.header .nav0 .nav1 {
+  width: 62px;
+  height: 50px;
+  background-color: #ff6700;
+  color: #fffffe;
+  font-size: 26px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+}
+.header .nav0 .navPicture {
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f58837161090e2e04bf687088b2ffe77.gif?w=165&h=55) no-repeat;
+  width: 140px;
+  height: 50px;
+  float: left;
+}
+.header .nav0 ul {
+  float: left;
+  margin-left: 30px;
+}
+.header .nav0 ul li {
+  float: left;
+}
+.header .nav0 ul li a {
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 50px;
+  color: #333;
+}
+.header .nav0 form {
+  width: 292px;
+  height: 47px;
+  border: 1px solid #e5e5e5;
+  float: right;
+  margin-top: 3px;
+}
+.header .nav0 form input {
+  width: 245px;
+  height: 47px;
+  border: none;
+  outline: none;
+  float: left;
+  border-right: 1px solid #e5e5e5;
+}
+.header .nav0 form div {
+  float: left;
+  width: 46px;
+  height: 47px;
+  text-align: center;
+  line-height: 47px;
+}
+.header .nav0 form div .iconfont {
+  font-size: 20px;
+}
+#banner {
+  position: relative;
+  width: 1226px;
+  height: 460px;
+  margin: 0 auto;
+  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe25c546580ff179bf6e60fb54d7afd4.jpg?thumb=1&w=1533&h=575&f=webp&q=90);
+  background-size: cover;
+}
+#banner ul {
+  position: absolute;
+  width: 178px;
+  height: 420px;
+  padding: 20px 24px 20px 32px;
+  background: rgba(105, 101, 101, 0.2);
+}
+#banner ul li {
+  line-height: 42px;
+  height: 42px;
+}
+#banner ul li p {
+  color: #fff;
+  font-size: 14px;
+  float: left;
+}
+#banner ul li .icon-dayuhao {
+  float: right;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bolder;
+}
+#four {
+  display: flex;
+  align-items: center;
+  width: 1226px;
+  height: 200px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+#four .left {
+  background-color: #5f5750;
+  width: 234px;
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#four .left li {
+  width: 75px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-right: 1px solid #fff;
+}
+#four .left li img {
+  width: 24px;
+  height: 24px;
+  margin-top: 18px;
+}
+#four .left li p {
+  font-size: 12px;
+  color: #fff;
+}
+#four .left li:nth-child(3n) {
+  border-right: none;
+}
+#four .left .B {
+  border-bottom: 1px solid #fff;
+}
+#four div {
+  width: 316px;
+  height: 170px;
+  background: chocolate;
+}
+#four div img {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  background-color: #f5f5f5;
+}
+#five {
+  width: 1226px;
+  height: 57.6px;
+  margin: 0 auto;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#five h2 {
+  font-weight: 200;
+}
+#five div {
+  width: 72px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#five div span {
+  width: 33px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #b0b0b0;
+}
+.fivemain {
+  width: 1226px;
+  height: 339px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fivemain ul {
+  width: 234px;
+  height: 100%;
+  background-color: #fff;
+  border-top: 1px solid red;
+}
+.fivemain ul:first-child {
+  background-color: #f1eded;
+}
+.fivemain ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.fivemain ul img {
+  width: 160px;
+  height: 160px;
+}
+.fivemain ul p {
+  font-size: 14px;
+  color: #212121;
+}
+.fivemain ul span {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+.fivemain ul div {
+  font-size: 14px;
+}
+.fivemain ul div span {
+  color: #ff6709;
+  font-size: 14px;
+}
+.fivemain ul div del {
+  text-decoration: line-through;
+}
+.picture {
+  width: 1226px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.picture img {
+  width: 100%;
+  height: 120px;
+}
+#phone {
+  width: 1226px;
+  height: 57.6px;
+  margin: 0 auto;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#phone h2 {
+  font-weight: 200;
+}
+#phone div {
+  width: 92px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#phone div p {
+  font-size: 16px;
+}
+#phone div div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #b0b0b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#phone div div span {
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.select {
+  width: 1226px;
+  height: 614px;
+  margin: 0 auto;
+}
+.select aside img {
+  width: 234px;
+  height: 614px;
+  float: left;
+}
+.select div {
+  width: 234px;
+  height: 260px;
+  background-color: #fff;
+  margin-bottom: 14px;
+  margin-left: 14px;
+  float: left;
+  padding: 20px 0;
+  margin: 0 0 14px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.select > div img {
+  width: 160px;
+  height: 160px;
+}
+.select > div p {
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.select > div .span1 {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+.select > div .span2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select > div .span2 span {
+  font-size: 14px;
+  color: #FF6700;
+  margin-right: 5px;
+}
+.select > div .span2 del {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+.TV {
+  width: 1226px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.TV img {
+  width: 100%;
+  height: 120px;
+}
+#home {
+  width: 1226px;
+  height: 57.6px;
+  margin: 0 auto;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home h2 {
+  font-weight: 200;
+}
+#home div {
+  width: 120px;
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#home div p {
+  font-size: 16px;
+}
+.homemain {
+  width: 1226px;
+  height: 614px;
+  margin: 0 auto;
+}
+.homemain aside {
+  float: left;
+  width: 234px;
+  height: 614px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.homemain aside img {
+  width: 100%;
+  height: 300px;
+}
+.homemain div {
+  width: 234px;
+  height: 260px;
+  background-color: #fff;
+  margin-bottom: 14px;
+  margin-left: 14px;
+  float: left;
+  padding: 20px 0;
+  margin: 0 0 14px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.homemain div img {
+  width: 160px;
+  height: 160px;
+}
+.homemain div p {
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.homemain div .span1 {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+.homemain div .span2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homemain div .span2 span {
+  font-size: 14px;
+  color: #FF6700;
+  margin-right: 5px;
+}
+.homemain div .span2 del {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+.homemain section {
+  background-color: #fff;
+  float: right;
+  width: 234px;
+  height: 143px;
+  margin: 0 0 14px 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.homemain section aside {
+  width: 95px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.homemain section aside p {
+  font-size: 14px;
+}
+.homemain section aside span {
+  font-size: 12px;
+  color: #FF6700;
+}
+.homemain section img {
+  width: 80px;
+  height: 80px;
+}
+.homemain .section2 aside {
+  width: 95px;
+  height: 70px;
+}
+.homemain .section2 aside span {
+  color: #000;
+}
+.homemain .section2 .icon-youjiantou {
+  font-size: 50px;
+  color: orangered;
+}
+#smart {
+  width: 1226px;
+  height: 57.6px;
+  margin: 0 auto;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#smart h2 {
+  font-weight: 200;
+}
+#smart div {
+  width: 180px;
+  height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#smart div p {
+  font-size: 16px;
+}
+.smartmain {
+  width: 1226px;
+  height: 614px;
+  margin: 0 auto;
+}
+.smartmain aside {
+  float: left;
+  width: 234px;
+  height: 614px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.smartmain aside img {
+  width: 100%;
+  height: 300px;
+}
+.smartmain div {
+  width: 234px;
+  height: 260px;
+  background-color: #fff;
+  margin-bottom: 14px;
+  margin-left: 14px;
+  float: left;
+  padding: 20px 0;
+  margin: 0 0 14px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.smartmain div img {
+  width: 160px;
+  height: 160px;
+}
+.smartmain div p {
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.smartmain div .span1 {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+.smartmain div .span2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.smartmain div .span2 span {
+  font-size: 14px;
+  color: #FF6700;
+  margin-right: 5px;
+}
+.smartmain div .span2 del {
+  font-size: 14px;
+  color: #b0b0b0;
+}
+.smartmain section {
+  background-color: #fff;
+  float: right;
+  width: 234px;
+  height: 143px;
+  margin: 0 0 14px 14px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.smartmain section aside {
+  width: 95px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.smartmain section aside p {
+  font-size: 14px;
+}
+.smartmain section aside span {
+  font-size: 12px;
+  color: #FF6700;
+}
+.smartmain section img {
+  width: 80px;
+  height: 80px;
+}
+.smartmain .section2 aside {
+  width: 95px;
+  height: 70px;
+}
+.smartmain .section2 aside span {
+  color: #000;
+}
+.smartmain .section2 .icon-youjiantou {
+  font-size: 50px;
+  color: orangered;
+}
+footer {
+  width: 100%;
+  background-color: #fff;
+}
+footer #serve {
+  width: 1226px;
+  height: 26px;
+  margin: 0 auto;
+  padding: 27px 0;
+  border-bottom: 1px solid #000;
+}
+footer #serve li {
+  float: left;
+  width: calc(20% - 1px);
+  height: 26px;
+  text-align: center;
+  border-right: 1px solid #000;
+  line-height: 26px;
+}
+footer #serve li .icon {
+  font-size: 22px;
+}
+footer #serve li em {
+  font-size: 16px;
+}
+footer .footercenter {
+  width: 1226px;
+  height: 220px;
+  padding: 40px 0;
+  margin: 0 auto;
+  display: flex;
+}
+footer .footercenter .centerleft {
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+footer .footercenter .centerleft ul {
+  width: calc(100% / 6);
+  height: 100%;
+}
+footer .footercenter .centerleft ul li {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #757575;
+}
+footer .footercenter .centerleft ul li:first-child {
+  margin: 0 0 26px;
+  font-size: 14px;
+  color: #424242;
+}
+footer .footercenter .centerright {
+  width: 20%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center ;
+  border-left: 1px solid #ccc;
+}
+footer .footercenter .centerright p {
+  font-size: 22px;
+  color: #FF6700;
+}
+footer .footercenter .centerright span {
+  color: #616161;
+  font-size: 12px;
+}
+footer .footercenter .centerright button {
+  width: 120px;
+  height: 30px;
+  border: 1px solid #ff6709;
+}
+footer .footercenter .centerright button p {
+  font-size: 14px;
+}
+footer .footercenter .centerright aside {
+  display: flex;
+  width: 100%;
+  height: 21px;
+  justify-content: center;
+  align-items: center;
+}
+footer .footercenter .centerright aside p,
+footer .footercenter .centerright aside .iconfont {
+  font-size: 14px;
+  padding: 0 5px;
+  color: #616161;
+}
+#footerlast {
+  width: 100%;
+  height: 245px;
+  background-color: #fafafa;
+}
+#footerlast .last {
+  width: 1226px;
+  height: 185px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+#footerlast .last .lasttext {
+  width: 100%;
+  height: 89px;
+  display: flex;
+}
+#footerlast .last .lasttext .logo {
+  width: 57px;
+  height: 57px;
+  margin-right: 10px;
+  background: url(../../img/MI.png) no-repeat;
+}
+#footerlast .last .lasttext .textright {
+  width: calc(100% - 57px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#footerlast .last .lasttext .textright p:first-child a {
+  padding: 0 2px;
+  color: #757575;
+}
+#footerlast .last .lasttext .textright p {
+  font-size: 12px;
+  color: #b0b0b0;
+}
+#footerlast .last .lastlink {
+  width: 100%;
+  height: 28px;
+  margin: 4px 0 15px;
+  padding: 0 0 0 67px;
+}
+#footerlast .last .lastlink a {
+  display: inline-block;
+  margin-right: 5px;
+}
+#footerlast .last .lastlink a img {
+  width: 83px;
+  height: 28px;
+}
+#footerlast .last .lastlink a .lastimg {
+  width: 106px;
+  height: 40px;
+}
+#footerlast .last .lastp {
+  width: 1226px;
+  height: 19px;
+  margin: 30px 0 0;
+  color: #333333;
+  text-align: center;
+  font-size: 16px;
+}
+.right-nav {
+  width: 100px;
+  height: 500px;
+  border: 1px solid #e0e0e0;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 999999;
+  background-color: #fff;
+}
+.right-nav li {
+  width: 100px;
+  height: 85px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  padding-top: 15px;
+  color: #757575;
+  list-style: none;
+}
+.right-nav li .iconfont {
+  font-size: 30px;
+  color: #757575;
+}
