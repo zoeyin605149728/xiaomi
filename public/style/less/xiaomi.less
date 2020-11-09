@@ -9,14 +9,22 @@ body {
     background-color: #fff;
     min-width: 1226px;
 }
+ul,ol{
+    margin-bottom: 0;
+    
+}
 a{
     text-decoration: none;
-
+    color: #b0b0b0;
+    &:hover{
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 li{
     list-style: none;
 }
-
 .header {
     width: 100%;
     height: 260px;
@@ -54,9 +62,8 @@ li{
                 height: 40px;
                 line-height: 40px;
                  a {
-                    color: #b0b0b0;
                     line-height: 40px;
-                    display: inline-block;
+                    display: inline-block;            
                 }
                 .sep {
                     margin: 0 .3em;
@@ -72,6 +79,7 @@ li{
                 margin-left: 15px;
                 transition: all .2s;
                 font-size: 12px;
+                
                  .cart-mini {
                     position: relative;
                     z-index: 32;
@@ -81,14 +89,18 @@ li{
                     text-align: center;
                     color: #b0b0b0;
                     background: #424242;
+                    &:hover{
+                        background: #fff;
+                        color: #ff6700;
+                    }
                      .icon-gouwuchekong{
                         margin-right: 4px;
                         font-size: 20px;
                         line-height: 20px;
                         vertical-align: -4px;
+                        
                      }
                 }
-
             }
             .topbar-info{
                 float: right;
@@ -122,12 +134,8 @@ li{
             background:url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f58837161090e2e04bf687088b2ffe77.gif?w=165&h=55) no-repeat;
             width: 140px;
             height: 50px;
-            float: left;
-            
-
-            
+            float: left;            
         }
-        
         ul{
             float: left;
              margin-left: 30px;
@@ -139,8 +147,7 @@ li{
                 line-height: 50px;
                 color: #333;
                 }
-            }
-             
+            }            
         }
         form{
             width: 292px;
@@ -158,11 +165,11 @@ li{
              }
              div{
                  float:left;
-                 width:46px;
+                 width:45px;
                  height: 47px;
                  text-align: center;
                  line-height: 47px;
-                 .iconfont{
+                 .icon-fangdajing{
                     font-size: 20px;
                  }
              }
@@ -170,34 +177,45 @@ li{
     }
 }
 //轮播图
-#banner{
+#carousel-example-generic{
     position: relative;
     width:1226px;
     height: 460px;
     margin: 0 auto;
-    background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe25c546580ff179bf6e60fb54d7afd4.jpg?thumb=1&w=1533&h=575&f=webp&q=90) ;
-    background-size: cover;
-   
+    .glyphicon-chevron-left{
+        left:280px;
+    }
+    
     ul{ 
         position: absolute;
-        width: 178px;
-        height: 420px;
-        padding: 20px 24px 20px 32px;
+        width: 234px;
+        height: 460px;
+        padding-top: 10px ;
         background: rgba(105,101,101,.2);
+        z-index: 9999;
+        top: 0;
+        left: 0;
        
         li{
-            line-height: 42px;
-            height: 42px;
+            line-height: 45px;
+            height: 45px;
+            &:hover{
+                background: #ff6700;
+            }
             p{
                 color: #fff;
                 font-size: 14px;
                 float: left;
+                margin: 0;
+                padding: 0;
+                margin-left: 25px;
             }
-            .icon-dayuhao{
+            .icon-youbian{
                 float: right;
                 font-size: 16px;
                 color: #fff;
                 font-weight: bolder;
+                margin-right: 25px;
             }
         }
     }
@@ -226,6 +244,7 @@ li{
             justify-content: space-evenly;
             align-items: center;
             border-right: 1px solid #fff;
+            
             
             
             img{
@@ -399,8 +418,6 @@ li{
     width: 1226px;
     height: 614px;
     margin: 0 auto;
-    
-    
     aside img{
         width: 234px;
         height: 614px;
@@ -408,7 +425,7 @@ li{
     }
     div{
         width: 234px;
-        height: 260px;
+        height: 300px;
          background-color: #fff;
         margin-bottom: 14px;
         margin-left: 14px;
@@ -509,7 +526,7 @@ li{
     }
     div{
         width: 234px;
-        height: 260px;
+        height: 300px;
         background-color: #fff;
         margin-bottom: 14px;
         margin-left: 14px;
@@ -643,7 +660,7 @@ li{
     }
     div{
         width: 234px;
-        height: 260px;
+        height: 300px;
         background-color: #fff;
         margin-bottom: 14px;
         margin-left: 14px;
@@ -739,7 +756,7 @@ footer{
     // 预约维修服务
     #serve{
         width: 1226px;
-        height: 26px;
+        height: 80px;
         margin: 0 auto;
         padding: 27px 0;
        border-bottom: 1px solid #000;
@@ -757,6 +774,7 @@ footer{
             }
             em{
                 font-size: 16px;
+                
             }
         }
         
@@ -801,6 +819,7 @@ footer{
             p{
                 font-size: 22px;
                 color: #FF6700;
+                margin: 0;
             }
             span{
                 color: #616161;
@@ -876,7 +895,7 @@ footer{
             .lastlink{
                 width: 100%;
                 height: 28px;
-                margin: 4px 0 15px;
+                margin: 35px 0 15px;
                 padding: 0 0 0 67px;
                 a{
                     display: inline-block;
@@ -930,6 +949,9 @@ footer{
             }
         }
     }
+
+
+   
 
     
 

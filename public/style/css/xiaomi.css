@@ -9,8 +9,18 @@ body {
   background-color: #fff;
   min-width: 1226px;
 }
+ul,
+ol {
+  margin-bottom: 0;
+}
 a {
   text-decoration: none;
+  color: #b0b0b0;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 li {
   list-style: none;
@@ -54,7 +64,6 @@ li {
   line-height: 40px;
 }
 .header .site-topbar .container .topbar-nav a {
-  color: #b0b0b0;
   line-height: 40px;
   display: inline-block;
 }
@@ -81,6 +90,10 @@ li {
   text-align: center;
   color: #b0b0b0;
   background: #424242;
+}
+.header .site-topbar .container .topbar-cart .cart-mini:hover {
+  background: #fff;
+  color: #ff6700;
 }
 .header .site-topbar .container .topbar-cart .cart-mini .icon-gouwuchekong {
   margin-right: 4px;
@@ -149,43 +162,54 @@ li {
 }
 .header .nav0 form div {
   float: left;
-  width: 46px;
+  width: 45px;
   height: 47px;
   text-align: center;
   line-height: 47px;
 }
-.header .nav0 form div .iconfont {
+.header .nav0 form div .icon-fangdajing {
   font-size: 20px;
 }
-#banner {
+#carousel-example-generic {
   position: relative;
   width: 1226px;
   height: 460px;
   margin: 0 auto;
-  background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fe25c546580ff179bf6e60fb54d7afd4.jpg?thumb=1&w=1533&h=575&f=webp&q=90);
-  background-size: cover;
 }
-#banner ul {
+#carousel-example-generic .glyphicon-chevron-left {
+  left: 280px;
+}
+#carousel-example-generic ul {
   position: absolute;
-  width: 178px;
-  height: 420px;
-  padding: 20px 24px 20px 32px;
+  width: 234px;
+  height: 460px;
+  padding-top: 10px ;
   background: rgba(105, 101, 101, 0.2);
+  z-index: 9999;
+  top: 0;
+  left: 0;
 }
-#banner ul li {
-  line-height: 42px;
-  height: 42px;
+#carousel-example-generic ul li {
+  line-height: 45px;
+  height: 45px;
 }
-#banner ul li p {
+#carousel-example-generic ul li:hover {
+  background: #ff6700;
+}
+#carousel-example-generic ul li p {
   color: #fff;
   font-size: 14px;
   float: left;
+  margin: 0;
+  padding: 0;
+  margin-left: 25px;
 }
-#banner ul li .icon-dayuhao {
+#carousel-example-generic ul li .icon-youbian {
   float: right;
   font-size: 16px;
   color: #fff;
   font-weight: bolder;
+  margin-right: 25px;
 }
 #four {
   display: flex;
@@ -372,7 +396,7 @@ li {
 }
 .select div {
   width: 234px;
-  height: 260px;
+  height: 300px;
   background-color: #fff;
   margin-bottom: 14px;
   margin-left: 14px;
@@ -466,7 +490,7 @@ li {
 }
 .homemain div {
   width: 234px;
-  height: 260px;
+  height: 300px;
   background-color: #fff;
   margin-bottom: 14px;
   margin-left: 14px;
@@ -588,7 +612,7 @@ li {
 }
 .smartmain div {
   width: 234px;
-  height: 260px;
+  height: 300px;
   background-color: #fff;
   margin-bottom: 14px;
   margin-left: 14px;
@@ -674,7 +698,7 @@ footer {
 }
 footer #serve {
   width: 1226px;
-  height: 26px;
+  height: 80px;
   margin: 0 auto;
   padding: 27px 0;
   border-bottom: 1px solid #000;
@@ -731,6 +755,7 @@ footer .footercenter .centerright {
 footer .footercenter .centerright p {
   font-size: 22px;
   color: #FF6700;
+  margin: 0;
 }
 footer .footercenter .centerright span {
   color: #616161;
@@ -796,7 +821,7 @@ footer .footercenter .centerright aside .iconfont {
 #footerlast .last .lastlink {
   width: 100%;
   height: 28px;
-  margin: 4px 0 15px;
+  margin: 35px 0 15px;
   padding: 0 0 0 67px;
 }
 #footerlast .last .lastlink a {
