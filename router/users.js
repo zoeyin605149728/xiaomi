@@ -1,22 +1,59 @@
-// 路由 负责数据库的登录注册
-
-// const express = require('express');
-// const Router = express.Router();
-
-// Router.get('/', (require, response, next) => {
-//     console.log(require.query)
-// })
 const express = require('express');
-// 2. 使用express提供的路由函数 创建一个路由对象
-const router = express.Router();
-// 路由内容
-router.get('/', (req, res, next) => {
-    // 接收前端发送的数据
-    // get数据通过 req.query 获取
-    // 获取内容是一个对象
-    console.log(req.query);
-    res.json({
-        username: req.query.username,
-        msg: '用户名可以使用'
+const conn = require('../dao/conn');
+const crypto = require('crypto');
+
+const router = express.Router(); // 获得路由对象
+
+// express支持restful api规范
+// 定义了很多http动词
+// get post put delete
+
+// router.route('/')
+//     .get((req, res, next) => {
+//         console.log(req.query);
+//         res.json({ 'method': 'get' });
+//     })
+//     .post((req, res, next) => {
+//         console.log(req.body);
+//         res.json({ 'method': 'post' });
+//     });
+
+router.route('/reg')
+    .post((req, res, next) => {
+        // 判断用户名是否存在
+        let searchUser = `select * from users where username='${req.body.username}'`;
+
+        conn.query(searchUser, (err, results) => {
+            if (err) console.log(err);
+            if (results.length) {
+                res.json({ msg: '用户名已存在', username: req.body.username, error: 1 });
+            } else {
+                let md5 = crypto.createHash('md5'); // 创建一个哈希加密
+                let passResult = md5.update(req.body.password).digest('hex'); // 加密内容获得16进制结果
+
+                let sql = `insert into users(username, password,email, phone, address) 
+        values('${req.body.username}','${passResult}','${req.body.email}','${req.body.phone}','${req.body.address}')`;
+
+
+                conn.query(sql, (err, result) => {
+                    if (err) console.log(err);
+                    console.log(result)
+                    if (result.insertId) { //有insertId
+                        res.cookie('username', req.body.username);
+                        res.cookie('isLogined', true);
+                        res.json({
+                            msg: "注册成功",
+                            username: req.body.username,
+                            error: 0
+                        });
+                    }
+                });
+            }
+        });
     });
-})
+router.route('/login')
+    .post((req, res, next) => {
+        console.log(req.cookies);
+    });
+
+module.exports = router; // 路由导出

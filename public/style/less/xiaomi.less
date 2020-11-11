@@ -4,6 +4,7 @@
     padding: 0;
 }
 body {
+    width: 100%;
     font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
     color: #333;
     background-color: #fff;
@@ -26,6 +27,7 @@ li{
     list-style: none;
 }
 .header {
+    position: relative;
     width: 100%;
     height: 260px;
     .topbar-banner-Wrapper{
@@ -53,7 +55,7 @@ li{
         font-size: 12px;
         color: #b0b0b0;
         background: #333;
-    .container {
+    .container1 {
             width: 1226px;
             margin-right: auto;
             margin-left: auto;
@@ -79,6 +81,19 @@ li{
                 margin-left: 15px;
                 transition: all .2s;
                 font-size: 12px;
+                position: relative;
+                .noshop{
+                    position: absolute;
+                    width: 316px;
+                    height: 100px;
+                    background-color: #fff;
+                    top: 40px;
+                    left: -196px;
+                    text-align: center;
+                    line-height: 100px;
+                    font-size: 12px;
+                    color: #000;
+                }
                 
                  .cart-mini {
                     position: relative;
@@ -89,10 +104,7 @@ li{
                     text-align: center;
                     color: #b0b0b0;
                     background: #424242;
-                    &:hover{
-                        background: #fff;
-                        color: #ff6700;
-                    }
+                 
                      .icon-gouwuchekong{
                         margin-right: 4px;
                         font-size: 20px;
@@ -114,11 +126,13 @@ li{
         } 
     }
     //第三行的nav
+    
     .nav0{
         width:1226px;
         margin: 0 auto;
         padding: 25px 0;
-        height: 50px;
+        height: 100px;
+        
         
         .nav1{
             width: 62px;
@@ -141,12 +155,73 @@ li{
              margin-left: 30px;
              li{
                  float: left;
+                
                  a{
+                display: inline-block;
                 padding: 0 10px;
                 font-size: 16px;
                 line-height: 50px;
                 color: #333;
+
+                &:hover{
+                    div{
+                        display: block;
+                        background-color: red;
+                    }
                 }
+                 div{
+                    width:100VW ;
+                    height: 201px;
+                    background-color: #fff;
+                    position: absolute;
+                    top: 260px;
+                    left: 0px;
+                    display: none;
+                     z-index: 555544;
+                     
+                     ol{
+                         width: 1226px;
+                         height: 201px;
+                        
+                         margin: 0 auto;
+                         display: flex;
+                         justify-content: space-evenly;
+                        //  background-color: blue;
+                         li{
+                         width: 16.6%;
+                         height: 100%;
+                         
+                         display: flex;
+                         flex-direction: column;
+                         align-items: center;
+                         
+                         
+                         img{
+                            width: 160px;
+                            height: 110px;
+                            margin-top: 20px;
+                            
+                         }
+                         p{
+                             font-size: 14px;
+                             margin: 0;
+
+                         }
+                         span{
+                             color: #ff6700;
+                             font-size: 12px;
+                             margin-top: -30px;
+                            
+
+                         }
+                     }
+                     }
+                     
+                    
+                  }
+                 
+                }
+               
             }            
         }
         form{
@@ -154,7 +229,7 @@ li{
             height: 47px;
             border: 1px solid #e5e5e5;
             float: right;
-             margin-top: 3px;
+             margin-top: 3px;&
              input{
                 width: 245px;
                 height: 47px;
@@ -169,6 +244,10 @@ li{
                  height: 47px;
                  text-align: center;
                  line-height: 47px;
+                 &:hover{
+                     background-color: #ff6700;
+                 }
+
                  .icon-fangdajing{
                     font-size: 20px;
                  }
@@ -183,7 +262,15 @@ li{
     height: 460px;
     margin: 0 auto;
     .glyphicon-chevron-left{
-        left:280px;
+        left:250px;
+        background-image: none;
+        
+    }
+    .carousel-control{
+        right: -60px;
+        background-image: none;
+        
+        
     }
     
     ul{ 
@@ -195,13 +282,42 @@ li{
         z-index: 9999;
         top: 0;
         left: 0;
+        .threedivmain{
+            width: 992px;
+            height: 460px;
+            position: absolute;
+            top: 0px;
+            left: 234px;
+            
+            .threediv{
+                
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                display: none;
+                div{
+                    float: left;
+                    display: flex;
+                     width: 25%;
+                     height: 20%;
+                     align-items: center;
+                     justify-content: space-evenly;          
+                     p{
+                         font-size: 14px;
+                         color: #000;
+                         margin:0 0 0 -40px;
+                     }
+                }
+            }
+        }
        
         li{
             line-height: 45px;
             height: 45px;
-            &:hover{
-                background: #ff6700;
-            }
+          
             p{
                 color: #fff;
                 font-size: 14px;
@@ -326,7 +442,47 @@ li{
         border-top: 1px solid red;
     }
     ul:first-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         background-color: #f1eded;
+        div:nth-child(1){
+                 color: #ef3a3b;
+                 font-size: 20px;
+        }
+        div:nth-child(2){
+            img{
+                width: 34px;
+                height: 53px;
+            }
+        }
+        div:nth-child(3){
+            font-size: 15px;
+            color: #00008a;
+        }
+        div:nth-child(4){
+            width: 180px;
+            height: 46px;
+            
+            display: flex;
+            justify-content: space-evenly;
+            span{
+                width: 46px;
+                height: 46px;
+                color: #fff;
+                font-size: 24px;
+                text-align: center;
+                line-height: 46px;
+                background-color: #605751;
+            }
+            p{
+                font-size: 28px;
+               
+            }
+
+        }
+
     }
     ul{
         display: flex;
@@ -934,6 +1090,7 @@ footer{
         right: 0;
         z-index: 999999;
         background-color: #fff;
+        z-index: 1000000;
         li{
             width: 100px;
             height: 85px;

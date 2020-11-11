@@ -1,0 +1,360 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    background-color: #fff;
+    min-width: 1226px;
+}
+ul,ol{
+    margin-bottom: 0;
+    
+}
+a{
+    text-decoration: none;
+    color: #b0b0b0;
+    &:hover{
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+li{
+    list-style: none;
+}
+
+// 第一行的nav
+.site-topbar {
+        position: relative;
+        z-index: 30;
+        height: 40px;
+        font-size: 12px;
+        color: #b0b0b0;
+        background: #333;
+    .container1 {
+            width: 1226px;
+            margin-right: auto;
+            margin-left: auto;
+            .topbar-nav {
+                float: left;
+                height: 40px;
+                line-height: 40px;
+                 a {
+                    line-height: 40px;
+                    display: inline-block;            
+                }
+                .sep {
+                    margin: 0 .3em;
+                    color: #424242;
+                    font-family: sans-serif;
+                }
+            }
+            .topbar-cart {
+                position: relative;
+                float: right;
+                width: 120px;
+                height: 40px;
+                margin-left: 15px;
+                transition: all .2s;
+                font-size: 12px;
+                
+                 .cart-mini {
+                    position: relative;
+                    z-index: 32;
+                    display: block;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #b0b0b0;
+                    background: #424242;
+                    &:hover{
+                        background: #fff;
+                        color: #ff6700;
+                    }
+                     .icon-gouwuchekong{
+                        margin-right: 4px;
+                        font-size: 20px;
+                        line-height: 20px;
+                        vertical-align: -4px;
+                        
+                     }
+                }
+            }
+            .topbar-info{
+                float: right;
+                 height: 40px;
+                 line-height: 40px;
+                 margin-right: 20px;
+                 a{
+                     padding: 0 5px;
+                 }
+            }
+        } 
+    }
+    //第二行的nav
+    .nav0{
+        width:1226px;
+        margin: 0 auto;
+        padding: 25px 0;
+        height: 100px;
+        
+        
+        .nav1{
+            width: 62px;
+            height: 50px;
+            background-color: #ff6700;
+            color: #fffffe;
+            font-size: 26px;
+            text-align: center;
+            line-height: 50px;
+            float: left;
+            font-weight: 600;
+        }
+        ul{
+            float: left;
+             margin-left: 30px;
+             li{
+                 float: left;
+                 a{
+                padding: 0 10px;
+                font-size: 16px;
+                line-height: 50px;
+                color: #333;
+                }
+            }            
+        }
+        form{
+            width: 292px;
+            height: 47px;
+            border: 1px solid #e5e5e5;
+            float: right;
+             margin-top: 3px;
+             input{
+                width: 245px;
+                height: 47px;
+                border: none;
+                outline: none;
+                float: left;
+                border-right: 1px solid #e5e5e5;
+             }
+             div{
+                 float:left;
+                 width:45px;
+                 height: 47px;
+                 text-align: center;
+                 line-height: 47px;
+                 &:hover{
+                    background-color: #ff6700;
+                }
+                 .icon-fangdajing{
+                    font-size: 20px;
+                 }
+             }
+        }
+    }
+    // redmi
+    .Redmi{
+        width: 100%;
+        height: 60px;
+        background-color: #fff; 
+        position: sticky;
+        top:0;
+        border-top: 1px solid #ccc;
+        box-shadow: 3px 3px  #ccc;
+
+        .redmi{
+       
+        width: 1226px;
+        height: 60px;
+        margin: 0 auto;
+        ul:first-child{
+            li{ 
+                height: 60px;
+                line-height: 60px;
+                float: left;  
+                text-align: center;
+              
+                    
+                 h2{
+                    font-size: 18px;
+                    padding: 0 10px;
+                }    
+                a{
+                    padding: 0 10px;
+                    font-size: 12px;
+                    height: 20px;
+                    line-height: 20px;
+                    border-left: 1px solid #ccc;
+                    display: inline-block;
+                }
+            }  
+        }
+        p{
+            width: 320px;
+            height: 60px;
+            line-height: 60px;
+            float: right;
+            text-align: center;
+            a{
+                display: inline-block;
+                padding: 0 7px;
+                height: 20px;
+                line-height: 20px;
+                border-right: 1px solid #000;
+            }  
+        }
+        a{
+            color: #616161;
+        }
+        a:hover{
+            color: #ff4a00;
+        }
+          
+    }
+}
+
+// main
+.main{
+    width: 1226px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    // 轮播图
+    #carousel-example-generic{
+        padding: 32px 0 12px;
+        width: 560px;
+        height: 560px;
+        a{
+            background: none;
+        }
+        
+    }
+    .mainright{
+        padding-top: 32px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        .top{
+            display: flex;
+            width: 100%;
+            height: 36px;
+            align-items: center;
+            img{
+               width: 50px;
+               height: 24px;
+                }
+            p{
+                margin: 0;
+                font-size: 24px;
+                 font-weight: 400;
+                 color: #212121;
+                }
+            } 
+        .toptext{
+            width: 600px;
+            height: 91px;
+            color: #b0b0b0;
+            font-size: 14px;
+            padding: 8px 0 0;
+            .span1{
+                color: #ff4a00;
+            }
+        }
+        .self-support{
+            width: 600px;
+            height: 20px;
+            color: #ff4a00;
+            font-size: 14px;
+            margin: 14px 0 0 ;
+        }
+        .price{
+            display: flex;
+            align-items: center;
+            width: 600px;
+            height: 40px;
+            padding: 12px 0 10px;
+            p{
+                margin: 0 5px 0 0;
+                color: #ff4a00;
+                font-size: 18px;
+            }
+            del{
+                color: #b0b0b0;
+            }
+        }
+        .line{
+            width: 600px;
+            height: 1px;
+            margin: 12px 0;
+            background-color: #ccc;
+        }
+        .address{
+            width: 600px;
+            height: 104px;
+            padding: 30px 50px;
+            border: 1px solid #ccc;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .iconfont{
+                font-size: 16px; 
+            }
+            .addresscon{
+                width: 498px;
+                height: 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    a{
+                        margin-right: 10px;
+                        &:hover{
+                            color: #ff4a00;
+                        }
+                    }
+                }
+                span{
+                    color: #ff4a00;
+                }
+               
+            }
+        }
+        .title1{
+            font-size: 18px;
+            width: 100%;
+            height: 26px;
+            line-height: 26px;
+            margin: 10px 0;
+        }
+        .title1a{
+            width: 100%;
+            height: 41px;
+            display: flex;
+            justify-content: space-between;
+            
+            a{
+                width: 292px;
+                height: 41px;
+                border: 1px solid #ccc;
+                text-align: center;
+                line-height:41px ;
+                &:hover{
+                    color: #ff4a00;
+                }
+            }
+        }
+
+
+    }
+       
+        
+
+}
+    

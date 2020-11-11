@@ -1,0 +1,333 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 14px/1.5 Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  color: #333;
+  background-color: #fff;
+  min-width: 1226px;
+}
+ul,
+ol {
+  margin-bottom: 0;
+}
+a {
+  text-decoration: none;
+  color: #b0b0b0;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+.site-topbar {
+  position: relative;
+  z-index: 30;
+  height: 40px;
+  font-size: 12px;
+  color: #b0b0b0;
+  background: #333;
+}
+.site-topbar .container1 {
+  width: 1226px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.site-topbar .container1 .topbar-nav {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+}
+.site-topbar .container1 .topbar-nav a {
+  line-height: 40px;
+  display: inline-block;
+}
+.site-topbar .container1 .topbar-nav .sep {
+  margin: 0 0.3em;
+  color: #424242;
+  font-family: sans-serif;
+}
+.site-topbar .container1 .topbar-cart {
+  position: relative;
+  float: right;
+  width: 120px;
+  height: 40px;
+  margin-left: 15px;
+  transition: all 0.2s;
+  font-size: 12px;
+}
+.site-topbar .container1 .topbar-cart .cart-mini {
+  position: relative;
+  z-index: 32;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #b0b0b0;
+  background: #424242;
+}
+.site-topbar .container1 .topbar-cart .cart-mini:hover {
+  background: #fff;
+  color: #ff6700;
+}
+.site-topbar .container1 .topbar-cart .cart-mini .icon-gouwuchekong {
+  margin-right: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  vertical-align: -4px;
+}
+.site-topbar .container1 .topbar-info {
+  float: right;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+}
+.site-topbar .container1 .topbar-info a {
+  padding: 0 5px;
+}
+.nav0 {
+  width: 1226px;
+  margin: 0 auto;
+  padding: 25px 0;
+  height: 100px;
+}
+.nav0 .nav1 {
+  width: 62px;
+  height: 50px;
+  background-color: #ff6700;
+  color: #fffffe;
+  font-size: 26px;
+  text-align: center;
+  line-height: 50px;
+  float: left;
+  font-weight: 600;
+}
+.nav0 ul {
+  float: left;
+  margin-left: 30px;
+}
+.nav0 ul li {
+  float: left;
+}
+.nav0 ul li a {
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 50px;
+  color: #333;
+}
+.nav0 form {
+  width: 292px;
+  height: 47px;
+  border: 1px solid #e5e5e5;
+  float: right;
+  margin-top: 3px;
+}
+.nav0 form input {
+  width: 245px;
+  height: 47px;
+  border: none;
+  outline: none;
+  float: left;
+  border-right: 1px solid #e5e5e5;
+}
+.nav0 form div {
+  float: left;
+  width: 45px;
+  height: 47px;
+  text-align: center;
+  line-height: 47px;
+}
+.nav0 form div:hover {
+  background-color: #ff6700;
+}
+.nav0 form div .icon-fangdajing {
+  font-size: 20px;
+}
+.Redmi {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  border-top: 1px solid #ccc;
+  box-shadow: 3px 3px #ccc;
+}
+.Redmi .redmi {
+  width: 1226px;
+  height: 60px;
+  margin: 0 auto;
+}
+.Redmi .redmi ul:first-child li {
+  height: 60px;
+  line-height: 60px;
+  float: left;
+  text-align: center;
+}
+.Redmi .redmi ul:first-child li h2 {
+  font-size: 18px;
+  padding: 0 10px;
+}
+.Redmi .redmi ul:first-child li a {
+  padding: 0 10px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  border-left: 1px solid #ccc;
+  display: inline-block;
+}
+.Redmi .redmi p {
+  width: 320px;
+  height: 60px;
+  line-height: 60px;
+  float: right;
+  text-align: center;
+}
+.Redmi .redmi p a {
+  display: inline-block;
+  padding: 0 7px;
+  height: 20px;
+  line-height: 20px;
+  border-right: 1px solid #000;
+}
+.Redmi .redmi a {
+  color: #616161;
+}
+.Redmi .redmi a:hover {
+  color: #ff4a00;
+}
+.main {
+  width: 1226px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.main #carousel-example-generic {
+  padding: 32px 0 12px;
+  width: 560px;
+  height: 560px;
+}
+.main #carousel-example-generic a {
+  background: none;
+}
+.main .mainright {
+  padding-top: 32px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.main .mainright .top {
+  display: flex;
+  width: 100%;
+  height: 36px;
+  align-items: center;
+}
+.main .mainright .top img {
+  width: 50px;
+  height: 24px;
+}
+.main .mainright .top p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #212121;
+}
+.main .mainright .toptext {
+  width: 600px;
+  height: 91px;
+  color: #b0b0b0;
+  font-size: 14px;
+  padding: 8px 0 0;
+}
+.main .mainright .toptext .span1 {
+  color: #ff4a00;
+}
+.main .mainright .self-support {
+  width: 600px;
+  height: 20px;
+  color: #ff4a00;
+  font-size: 14px;
+  margin: 14px 0 0 ;
+}
+.main .mainright .price {
+  display: flex;
+  align-items: center;
+  width: 600px;
+  height: 40px;
+  padding: 12px 0 10px;
+}
+.main .mainright .price p {
+  margin: 0 5px 0 0;
+  color: #ff4a00;
+  font-size: 18px;
+}
+.main .mainright .price del {
+  color: #b0b0b0;
+}
+.main .mainright .line {
+  width: 600px;
+  height: 1px;
+  margin: 12px 0;
+  background-color: #ccc;
+}
+.main .mainright .address {
+  width: 600px;
+  height: 104px;
+  padding: 30px 50px;
+  border: 1px solid #ccc;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main .mainright .address .iconfont {
+  font-size: 16px;
+}
+.main .mainright .address .addresscon {
+  width: 498px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .mainright .address .addresscon p {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.main .mainright .address .addresscon p a {
+  margin-right: 10px;
+}
+.main .mainright .address .addresscon p a:hover {
+  color: #ff4a00;
+}
+.main .mainright .address .addresscon span {
+  color: #ff4a00;
+}
+.main .mainright .title1 {
+  font-size: 18px;
+  width: 100%;
+  height: 26px;
+  line-height: 26px;
+  margin: 10px 0;
+}
+.main .mainright .title1a {
+  width: 100%;
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .mainright .title1a a {
+  width: 292px;
+  height: 41px;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 41px ;
+}
+.main .mainright .title1a a:hover {
+  color: #ff4a00;
+}
