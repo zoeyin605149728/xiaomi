@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 body {
   width: 100%;
@@ -58,32 +59,21 @@ a {
   color: #333;
   font-weight: normal;
 }
-#main .IM .regbox .country {
+#main .IM .regbox .use {
   width: 100%;
   height: 42px;
   margin-bottom: 15px;
-}
-#main .IM .regbox .country .left {
-  width: 276px;
-  height: 42px;
-  padding-left: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #000;
-  float: left;
-  border-right: none;
-  line-height: 42px;
 }
-#main .IM .regbox .country .right {
-  float: right;
-  width: 39px;
-  height: 42px;
-  border: 1px solid #000;
-  text-align: center;
-  line-height: 42px ;
+#main .IM .regbox .use .username {
+  width: 95%;
+  height: 38px;
+  border: none;
 }
-#main .IM .regbox .country .right .iconfont {
-  font-size: 20px ;
-}
-#main .IM .regbox .text {
+#main .IM .regbox p {
   width: 100%;
   height: 20px;
   color: #666666;
@@ -91,34 +81,18 @@ a {
   margin-top: -10px;
   margin-bottom: 15px;
 }
-#main .IM .regbox .phone {
+#main .IM .regbox .pass {
   width: 331px;
   height: 40px;
   border: 1px solid #000;
   margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#main .IM .regbox .phone .phoneL {
-  float: left;
-  width: 54px;
-  height: 40px;
-  padding-left: 14px;
-  line-height: 40px;
-}
-#main .IM .regbox .phone .phoneL p {
-  float: left;
-  font-size: 14px;
-  color: #555555;
-  margin-right: 8px;
-}
-#main .IM .regbox .phone .phoneL .iconfont {
-  float: left;
-  font-size: 12px;
-}
-#main .IM .regbox .phone input {
-  float: right;
-  width: 239px ;
-  height: 20px;
-  padding: 10px;
+#main .IM .regbox .pass input {
+  width: 320px;
+  height: 35px;
   border: none;
 }
 #main .IM .regbox #submit {
@@ -130,6 +104,7 @@ a {
   color: #fff;
   text-align: center;
   line-height: 42px;
+  cursor: pointer;
 }
 #main .IM .msg {
   width: 786px;

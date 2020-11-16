@@ -8,6 +8,7 @@
 </head>
 <link rel="stylesheet" href="./style/css/zhuce.css">
 <link rel="stylesheet" href="./font/iconfont.css">
+<script src="./js/reg.js" type="module"></script>
 
 <body>
     <div id="main">
@@ -17,24 +18,18 @@
         <h2>注册小米账号</h2>
         <div class="IM">
             <div class="regbox">
-                <h4>国家/地区</h4>
-                <div class="country">
-                    <div class="left">中国</div>
-                    <div class="right">
-                        <span class="iconfont icon-xia1
-                        "></span>
-                    </div>
+                <h4>账号</h4>
+                <!-- 用户名注册 -->
+                <div class="use">
+                    <input type="text" placeholder="用户名/邮箱" class="username" id="username">
                 </div>
-                <div class="text">成功注册帐号后，国家/地区将不能被修改</div>
-                <h4>手机号码</h4>
-                <div class="phone">
-                    <div class="phoneL">
-                        <p>+86</p>
-                        <span class="iconfont icon-xia"></span>
-                    </div>
-                    <input type="text" name="" id="" placeholder="请输入手机号码">
-
+                <p>成功注册帐号后，将不能修改</p>
+                <h4>密码</h4>
+                <!-- 密码注册 -->
+                <div class="pass">
+                    <input type="text" name="" id="password" placeholder="请输入密码" class="password">
                 </div>
+                <!-- 注册按钮 -->
                 <input type="text" name="" id="submit" value="立即注册">
             </div>
             <div class="msg">

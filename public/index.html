@@ -24,8 +24,6 @@
 
 
 <body>
-
-
     <!-- 首页头部 -->
     <div class="header">
         <!-- 首页图片a标签 -->
@@ -75,9 +73,9 @@
                 </div>
                 <!-- 登录注册 -->
                 <div class="topbar-info">
-                    <a class="link">登录</a>
+                    <a class="link" href="./denglu.html">登录</a>
                     <span class="sep">|</span>
-                    <a>注册</a>
+                    <a href="./zhuce.html">注册</a>
                     <span class="sep">|</span>
                     <a>消息通知</a>
                 </div>
@@ -88,8 +86,8 @@
             <div class="nav1">mI</div>
             <div class="navPicture"></div>
             <ul>
-                <li style="background-color: blue;"><a href="#">小米手机
-                    <div >
+                <li><a href="#">小米手机
+                    <!-- <div >
                         <ol>
                         <li>
                             <img src="../public/img/二级菜单图片.webp" alt="">
@@ -122,7 +120,7 @@
                             <span>5299元起</span>
                         </li>
                     </ol>
-                </div>
+                </div> -->
                 </a></li>
                 <li><a href="#">Redmi红米</a></li>
                 <li><a href="#">电视</a></li>
@@ -223,7 +221,7 @@
                 <p>生活 箱包</p>
                 <span class="iconfont icon-youbian"></span>
             </li>
-            <div class="threedivmain">
+            <div class="threedivmain" style="display: none;">
                 <div class="threediv">
 
                     <div>
@@ -694,13 +692,13 @@
                 <div>
                     <img src="./img/闪电.png" alt="">
                 </div>
-                <div>距离结束还有</div>
+                <div style="color:rgba(0,0,0,.54)">距离结束还有</div>
                 <div>
-                    <span>05</span>
+                    <span class="hour">05</span>
                     <p>:</p>
-                    <span>10</span>
+                    <span class="minutes">10</span>
                     <p>:</p>
-                    <span>14</span>
+                    <span class="second">14</span>
 
                 </div>
             </ul>
@@ -752,9 +750,11 @@
             <aside>
                 <img src="./img/小米MIX图片.webp" alt="">
             </aside>
-            <div>
+            <!-- <div>
                 <img src="./img/小米10至尊版.webp" alt="">
-                <p>小米10 至尊版</p>
+                <p>
+                    小米10 至尊版
+                </p>
                 <span class="span1">120X 变焦/120W秒充/120Hz屏幕</span>
                 <span class="span2"><span>2599元起</span></span>
             </div>
@@ -808,7 +808,7 @@
                    <span>2599元起</span>
                 <del>5999元</del>
                 </span>
-            </div>
+            </div> -->
         </div>
         <!-- 智能电视图片 -->
         <div class="TV">
@@ -1112,21 +1112,24 @@
 
     <!--右边固定的导航  -->
     <ul class="right-nav">
-        <li><span class="iconfont icon-weibiaoti2fuzhi07
+        <li><span class="iconfont icon-weibiaoti2fuzhi07 
             "></span>
             <p>手机app</p>
         </li>
-        <li><span class="iconfont icon-yonghu"></span>
+        <li><span class="iconfont icon-yonghu "></span>
             <p>个人中心</p>
         </li>
-        <li><span class="iconfont icon-xiuli"></span>
+        <li><span class="iconfont icon-xiuli "></span>
             <p>售后服务</p>
         </li>
-        <li><span class="iconfont icon-kefu"></span>
+        <li><span class="iconfont icon-kefu "></span>
             <p>人工客服</p>
         </li>
-        <li style="border: none;"><span class="iconfont icon-gouwuchekong"></span>
+        <li><span class="iconfont icon-gouwuchekong "></span>
             <p>购物车</p>
+        </li>
+        <li class="top-last"> <span class="iconfont icon-huidingbu "></span>
+            <p>回到顶部</p>
         </li>
     </ul>
 

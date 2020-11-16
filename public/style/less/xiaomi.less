@@ -2,6 +2,11 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-user-select:none;
+   -moz-user-select:none;
+   -ms-user-select:none;
+   user-select:none;
+   
 }
 body {
     width: 100%;
@@ -9,6 +14,10 @@ body {
     color: #333;
     background-color: #fff;
     min-width: 1226px;
+}
+
+input{
+    outline: none;
 }
 ul,ol{
     margin-bottom: 0;
@@ -93,6 +102,7 @@ li{
                     line-height: 100px;
                     font-size: 12px;
                     color: #000;
+                    
                 }
                 
                  .cart-mini {
@@ -132,8 +142,6 @@ li{
         margin: 0 auto;
         padding: 25px 0;
         height: 100px;
-        
-        
         .nav1{
             width: 62px;
             height: 50px;
@@ -166,7 +174,7 @@ li{
                 &:hover{
                     div{
                         display: block;
-                        background-color: red;
+                        // background-color: red;
                     }
                 }
                  div{
@@ -360,13 +368,18 @@ li{
             justify-content: space-evenly;
             align-items: center;
             border-right: 1px solid #fff;
-            
+            &:hover{
+                transform: translateY(-5px);
+                box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.3);
+                cursor: pointer;
+            }
             
             
             img{
                 width: 24px;
                 height: 24px;
                 margin-top: 18px;
+               
             }
             p{
                 font-size: 12px;
@@ -385,6 +398,11 @@ li{
         width: 316px;
         height: 170px;
         background: chocolate;
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.3);
+            cursor: pointer;
+        }
         img{
             width: 100%;
             height: 100%;
@@ -450,6 +468,7 @@ li{
         div:nth-child(1){
                  color: #ef3a3b;
                  font-size: 20px;
+                 
         }
         div:nth-child(2){
             img{
@@ -578,8 +597,13 @@ li{
         width: 234px;
         height: 614px;
         float: left;
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.3);
+            cursor: pointer;
+        }
     }
-    div{
+    a{
         width: 234px;
         height: 300px;
          background-color: #fff;
@@ -592,8 +616,13 @@ li{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.3);
+            cursor: pointer;
+        }
     }
-         >div{
+    >a{
              img{
                 width: 160px;
                 height: 160px;
@@ -675,6 +704,11 @@ li{
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 10px rgba(66, 63, 63, 0.3);
+            cursor: pointer;
+        }
         img{
             width: 100%;
             height: 300px;
@@ -695,6 +729,7 @@ li{
         justify-content: space-evenly;
     }
     div{
+        
         img{
             width: 160px;
             height: 160px;
@@ -734,6 +769,7 @@ li{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
         aside{
             width: 95px;
             height: 70px;
@@ -1080,32 +1116,38 @@ footer{
         }
     }
 
-// 右边固定的导航
-    .right-nav{
+// 右边导航
+.right-nav{
+    width: 100px;
+    // height: 500px;
+    border: 1px solid #e0e0e0;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 99;
+    background-color: white;
+    li{
         width: 100px;
-        height: 500px;
+        height: 100px;
+        text-align: center;
         border: 1px solid #e0e0e0;
-        position: fixed;
-        top: 100px;
-        right: 0;
-        z-index: 999999;
-        background-color: #fff;
-        z-index: 1000000;
-        li{
-            width: 100px;
-            height: 85px;
-            text-align: center;
-            border: 1px solid #e0e0e0;
-            padding-top: 15px;
+        padding-top: 15px;
+        color: #757575;
+        list-style: none;
+        &:hover p{
+            color:#ff6700 ;
+        }
+        &:hover span{
+            color:#ff6700 ;
+        }
+        
+        .iconfont{
+            font-size: 30px;
             color: #757575;
-            list-style: none;
-            .iconfont{
-                font-size: 30px;
-                color: #757575;
-               
-            }
+           
         }
     }
+}
 
 
    

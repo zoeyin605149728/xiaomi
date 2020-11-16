@@ -9,6 +9,9 @@ body {
     background-color: #fff;
     min-width: 1226px;
 }
+input{
+    outline: none;
+}
 ul,ol{
     margin-bottom: 0;
     
@@ -76,7 +79,7 @@ li{
                     }
                      .icon-gouwuchekong{
                         margin-right: 4px;
-                        font-size: 20px;
+                        font-size: 15px;
                         line-height: 20px;
                         vertical-align: -4px;
                         
@@ -161,6 +164,7 @@ li{
         height: 60px;
         background-color: #fff; 
         position: sticky;
+        z-index: 99;
         top:0;
         border-top: 1px solid #ccc;
         box-shadow: 3px 3px  #ccc;
@@ -235,7 +239,7 @@ li{
     .mainright{
         padding-top: 32px;
         width: 600px;
-        display: flex;
+        display: flex ;
         flex-direction: column;
         .top{
             display: flex;
@@ -268,7 +272,7 @@ li{
             height: 20px;
             color: #ff4a00;
             font-size: 14px;
-            margin: 14px 0 0 ;
+            margin: 25px 0 0 ;
         }
         .price{
             display: flex;
@@ -350,11 +354,356 @@ li{
                 }
             }
         }
+        .title1b{
+            width: 100%;
+            height: 41px;
+            display: flex;
+            a{
+                width: 292px;
+                height: 41px;
+                border: 1px solid #ccc;
+                text-align: center;
+                line-height:41px ;
+                margin-top: 15px;
+                &:hover{
+                    color: #ff4a00;
+                }
+            }
 
+        }
+        .choosecolor{
+            margin: 20px 0;
+            font-size: 18px;
+            width: 100%;
+            height: 26px;
+            line-height: 26px;
+            
+        }
+        .color1{
+            width: 100%;
+            height: 41px;
+            display: flex;
+            justify-content: space-between;
+            
+            a{
+                width: 292px;
+                height: 41px;
+                border: 1px solid #ccc;
+                text-align: center;
+                line-height:41px ;
+                &:hover{
+                    color: #ff4a00;
+                }
+            }
+        }
+        .color2{
+            width: 100%;
+            height: 41px;
+            display: flex;
+            justify-content: space-between;
+            a{
+                width: 292px;
+                height: 41px;
+                border: 1px solid #ccc;
+                text-align: center;
+                line-height:41px ;
+                margin-top: 15px;
+                &:hover{
+                    color: #ff4a00;
+                }
+            }
 
-    }
-       
-        
+        }
+        .total{
+            margin-top: 50px;
+            width: 600px;
+            height: 150px;
+            padding: 30px;
+            background: #f9f9fa;
+            margin-bottom: 30px;
+            
+            .totaltop{
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .totallast{
+                width: 100%;
+                height: 50%;
+                font-size: 25px;
+                color: #ff4a00;
+                
+            }
+            
+    
+    
+
+        }
+        .joinshop{
+            width: 100%;
+            height: 54px;
+            
+            display: flex;
+            margin-bottom: 100px;
+            
+            .input1{
+                width: 300px;
+                height: 54px;
+                background: #ff6700;
+                color: #fff;
+                font-size: 18px;
+                text-align:center ;
+                line-height: 54px;
+                margin-right: 20px;
+                border: none;
+                cursor: pointer;
+
+            }
+            .input2{
+                width: 142px;
+                height: 54px;
+                text-align:center ;
+                line-height: 54px;
+                background-color: #ccc;
+                color: #fff;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    } 
 
 }
+// 价格说明
+.price-declaration{
+    width: 100%;
+    height: 315px;
+    padding-bottom: 50px;
+    background-color: #f5f5f5;
+    .state{
+        display: block;
+        height: 76px;
+        padding: 22px 0;
+        width: 1200px;
+        margin: 0 auto;
+        font-size: 22px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    img{
+        display: block;
+        width: 1200px;
+        height: 189px;
+        margin: 0 auto;
+    }
+}
+
+//页尾
+footer{
+    width: 100%;
+    background-color: #fff;
+    // 预约维修服务
+    #serve{
+        width: 1226px;
+        height: 80px;
+        margin: 0 auto;
+        padding: 27px 0;
+       border-bottom: 1px solid #000;
+        li{
+            float: left;
+            width:calc( 20% - 1px);
+            height: 26px;
+            // background-color: green;
+            text-align: center;
+            border-right:1px solid #000 ;
+            
+            line-height: 26px;
+            .icon{
+                font-size: 22px;
+            }
+            em{
+                font-size: 16px;
+                
+            }
+        }
+        
+    }
+    .footercenter{
+        width: 1226px;
+        height: 220px;
+        padding: 40px 0;
+        // background-color: yellowgreen;
+        margin: 0 auto;
+        display: flex;
+        .centerleft{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            ul{
+                width: calc(100% / 6);
+                height: 100%;
+                li{
+                    margin: 10px 0 0;
+                    font-size: 12px;
+                    color: #757575;
+                }
+                li:first-child{
+                          margin: 0 0 26px;
+                          font-size: 14px;
+                          color: #424242;
+                }
+            }
+            
+
+        }
+        .centerright{
+            width: 20%;
+            height: 120px;
+            // background-color: grey;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items:center ;
+            border-left: 1px solid #ccc;
+            p{
+                font-size: 22px;
+                color: #FF6700;
+                margin: 0;
+            }
+            span{
+                color: #616161;
+                font-size: 12px;
+            }
+            button{
+                width: 120px;
+                height: 30px;
+                border: 1px solid #ff6709;
+                p{
+                    font-size: 14px;
+                }
+            }
+            aside{
+                display: flex;
+                width: 100%;
+                height: 21px;
+                justify-content: center;
+                align-items: center;
+                p,.iconfont{
+                    font-size: 14px;
+                    padding: 0 5px;
+                    color: #616161;
+                }
+                
+            }
+
+        }
+    }
+
+} 
+// 最后部分
+#footerlast{
+        width: 100%;
+        height: 245px;
+        background-color: #fafafa;
+        .last{
+            width: 1226px;
+            height: 185px;
+            margin: 0 auto;
+            padding: 30px 0;
+            .lasttext{
+                width: 100%;
+                height: 89px;
+                display: flex;
+                .logo{
+                    width: 57px;
+                    height: 57px;
+                    margin-right: 10px;
+                    
+                    background: url(../../img/MI.png) no-repeat;
+                }
+                .textright{
+                    width: calc(100% - 57px);
+                    display: flex;
+                   flex-direction: column;
+                   justify-content: space-between;
+                   p:first-child{
+                       a{
+                           padding: 0 2px;
+                           color: #757575;
+                           
+                       }
+                   }
+                   p{
+                       font-size: 12px;
+                       color: #b0b0b0;
+                   }
+                    
+                    
+                }
+            }
+            .lastlink{
+                width: 100%;
+                height: 28px;
+                margin: 35px 0 15px;
+                padding: 0 0 0 67px;
+                a{
+                    display: inline-block;
+                    margin-right: 5px;
+                    img{
+                    width: 83px;
+                    height: 28px;
+                    } 
+                     .lastimg{
+                         width: 106px;
+                         height: 40px;
+                     }
+                }
+                
+            }
+            .lastp{
+                width: 1226px;
+                height: 19px;
+                margin: 30px 0 0;
+                color: #333333;
+                text-align: center;
+                font-size: 16px;
+            }
+
+          
+        }
+    }
+
+// 右边固定的导航
+    .right-nav{
+        width: 100px;
+      
+        border: 1px solid #e0e0e0;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        z-index: 999999;
+        background-color: #fff;
+        z-index: 1000000;
+        li{
+            width: 100px;
+            height: 85px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            padding-top: 15px;
+            color: #757575;
+            list-style: none;
+            .iconfont{
+                font-size: 30px;
+                color: #757575;
+               
+            }
+        }
+    }
+
+
+
+
     

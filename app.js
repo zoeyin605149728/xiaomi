@@ -1,13 +1,13 @@
 const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
-// const cookie = require('cookie')
+
 const createError = require('http-errors');
 
 
 const app = express();
 const usersRouter = require('./router/users');
-// const productRouter = require('./router/product');
+const productRouter = require('./router/product');
 
 
 let conf = {
@@ -20,12 +20,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // post表单数据解析成json 
-// app.use(cookie())
+
 app.use(cookieParser()); // 读取和设置cookie的中间件
 
 
 app.use('/users', usersRouter);
-// app.use('/product', productRouter);
+app.use('/product', productRouter);
 
 
 // 自定义一个错误中间件
@@ -37,8 +37,7 @@ app.use(function(req, res, next) {
 app.use(function(err, req, res, next) {
     // console.log(err.status);
     res.status(err.status || 500);
-    res.location('/html/404.html'); //页面跳转
-
+    res.redirect('/html/404.html'); //页面跳转
 });
 
 app.listen(conf.port, conf.host, () => {

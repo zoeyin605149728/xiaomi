@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 body {
@@ -65,34 +66,24 @@ a{
                 color: #333;
                 font-weight: normal;
             }
-            .country{
+            .use{
                 width: 100%;
                 height: 42px;
                 margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid #000;
                 
-                .left{
-                    width: 276px;
-                    height: 42px;
-                    padding-left: 14px;
-                    border: 1px solid #000;
-                    float: left;
-                    border-right: none;
-                    line-height: 42px;
+                .username{
+                    width:95%;
+                    height: 38px;
+                    border: none;
+                    
                 }
-                .right{
-                    float: right;
-                    width:39px;
-                    height: 42px;
-                    border: 1px solid #000;
-                    text-align: center;
-                    line-height:42px ;
-                    .iconfont{
-                        font-size:20px ; 
-                    }
-                }
-
+                
             }
-             .text{
+             p{
                     width: 100%;
                     height: 20px;
                     color: #666666;
@@ -100,37 +91,20 @@ a{
                     margin-top: -10px;
                     margin-bottom: 15px;
                 }
-                .phone{
+                .pass{
                     width: 331px;
                     height: 40px;
                     border: 1px solid #000;
                     margin-bottom: 15px;
-                    .phoneL{
-                        float: left;
-                        width: 54px;
-                        height: 40px;
-                        padding-left: 14px;
-                        line-height: 40px;
-                        p{
-                            float: left;
-                            font-size: 14px;
-                            color: #555555;
-                            margin-right: 8px;
-                        }
-                        .iconfont{
-                            float: left;
-                            font-size: 12px;
-                        }
-                    }
-                    input{ 
-                        float: right;
-                        width:239px ;
-                         height: 20px;
-                        padding: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    input{
+                        width:320px;
+                        height: 35px;
                         border: none;
+                      
                     }
-                    
-                       
                        
                       
                 }
@@ -143,6 +117,7 @@ a{
                      color: #fff;
                      text-align: center;
                      line-height: 42px;
+                     cursor: pointer;
                 }
         }
         .msg{
