@@ -12,7 +12,7 @@ const productRouter = require('./router/product');
 
 let conf = {
     port: 8888,
-    host: 'localhost'
+    host: '10.31.162.63'
 };
 
 // 配置静态web服务

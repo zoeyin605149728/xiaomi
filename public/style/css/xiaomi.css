@@ -112,9 +112,13 @@ li {
   color: #b0b0b0;
   background: #424242;
 }
+.header .site-topbar .container1 .topbar-cart .cart-mini:hover {
+  background: #fff;
+  color: #ff6700;
+}
 .header .site-topbar .container1 .topbar-cart .cart-mini .icon-gouwuchekong {
   margin-right: 4px;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 20px;
   vertical-align: -4px;
 }
@@ -221,7 +225,7 @@ li {
 }
 .header .nav0 form div {
   float: left;
-  width: 45px;
+  width: 42px;
   height: 47px;
   text-align: center;
   line-height: 47px;

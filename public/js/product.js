@@ -52,8 +52,6 @@ import cookie from './library/cookie.js';
                 addItem(res.id, $('.span2').text())
 
             })
-
-
         }
     })
 

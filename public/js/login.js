@@ -1,8 +1,11 @@
 import './library/jquery.js';
 import './library/jquery.md5.js';
 import { baseUrl } from './library/config.js';
+
+
 $('#submit').on('click', function() {
     let password = $.md5($('#password').val());
+
     $.ajax({
         type: "post",
         url: `${baseUrl}/users/login`,

@@ -1,6 +1,8 @@
 const express = require('express');
 const conn = require('../dao/conn'); //数据库
+
 const router = express.Router();
+
 
 router.route('/getProducts')
     .get((req, res, next) => {
@@ -14,6 +16,7 @@ router.route('/getProducts')
         })
 
     });
+
 
 
 

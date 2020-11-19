@@ -28,14 +28,22 @@ import { baseUrl } from './library/config.js';
                 
             </a>`;
 
-
             });
             $('.select').append(tempLi);
+
+
+
+            let num = 0;
+            $('.input1').on('click', function() {
+                num++;
+                $('.span2').html(`${num}`)
+                addItem(res.id, $('.span2').text())
+
+            })
 
         }
     });
 })();
-
 
 
 

@@ -7,10 +7,11 @@ const router = express.Router(); // 获得路由对象
 router.route('/reg')
     .post((req, res, next) => {
         // 判断用户名是否存在
+
         let searchUser = `select * from users where username='${req.body.username}'`;
 
         conn.query(searchUser, (err, results) => {
-            if (err) console.log(err);
+            if (err) throw err;
             if (results.length) {
                 res.json({ msg: '用户名已存在', username: req.body.username, error: 1 });
             } else {
@@ -35,28 +36,53 @@ router.route('/reg')
             }
         });
     });
+
+// router.route('/login')
+//     .post((req, res, next) => {
+//         let searchUser = `select * from users where username='${req.body.username}'`;
+//         let password = `select * from users where password='${req.body.password}'`;
+//         conn.query(searchUser, (err, resultUser) => {
+//             if (err) throw err;
+//             if (resultUser.length) {
+//                 conn.query(password, (err, resultPassword) => {
+//                     if (err) console.log(err);
+//                     if (resultPassword.length) {
+//                         res.json({
+//                             'msg': '登录成功'
+//                         })
+//                     } else {
+//                         res.json({
+//                             'msg': '密码错误'
+//                         })
+//                     }
+//                 })
+//             } else {
+//                 res.json({
+//                     'msg': '用户名或者密码错误'
+//                 })
+//             }
+//         })
+//     })
+
 router.route('/login')
     .post((req, res, next) => {
-        let searchUser = `select * from users where username='${req.body.username}'`;
-        let password = `select * from users where password='${req.body.password}'`;
-        conn.query(searchUser, (err, resultUser) => {
+        console.log(req.body.password);
+
+        let md5 = crypto.createHash('md5')
+        let passResult = md5.update(req.body.password).digest('hex') //请求到的密码
+
+        let sql = `select * from users where username='${req.body.username}' and password='${passResult}'`; //前端和后端两次加密后的密码是否相同
+        console.log(sql);
+
+        conn.query(sql, (err, result) => {
             if (err) console.log(err);
-            if (resultUser.length) {
-                conn.query(password, (err, resultPassword) => {
-                    if (err) console.log(err);
-                    if (resultPassword.length) {
-                        res.json({
-                            'msg': '登录成功'
-                        })
-                    } else {
-                        res.json({
-                            'msg': '密码错误'
-                        })
-                    }
+            if (result.length) {
+                res.json({
+                    msg: '登录成功'
                 })
             } else {
                 res.json({
-                    'msg': '用户名或者密码错误'
+                    msg: '账号或密码错误'
                 })
             }
         })
